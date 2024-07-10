@@ -1,0 +1,38 @@
+{
+  "name": "pixel-radial",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "98e72041-0b8e-419d-ade8-adf5626b846c",
+    "appType": "clockface",
+    "appDisplayName": "Pixel Radial",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [
+      "access_heart_rate",
+      "access_activity",
+      "access_internet",
+      "access_location"
+    ],
+    "buildTargets": [
+      "vulcan"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "dependencies": {
+    "@material/material-color-utilities": "^0.3.0",
+    "fitfont": "^1.3.3",
+    "fp-ts": "^2.8.2",
+    "io-ts": "^2.2.10"
+  }
+}
